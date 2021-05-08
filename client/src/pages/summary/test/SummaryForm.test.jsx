@@ -4,7 +4,7 @@ import {
   waitForElementToBeRemoved,
 } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import SummaryForm from "../SummaryForm.jsx";
+import SummaryForm from "../SummaryForm";
 
 test("Initial conditions", () => {
   render(<SummaryForm />);
