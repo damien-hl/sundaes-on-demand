@@ -5,7 +5,7 @@
 
 ![Sundaes On Demand logo](./docs/sundaes_logo.png)
 
-Plateforme de personnalisation et de commande en ligne de desserts glacés développée avec React en suivant la méthode TDD (Test-Driven Development).
+Plateforme de personnalisation et de commande en ligne de desserts glacés développée avec React en suivant la méthode TDD (Test-Driven Development) et en utilisant les GitHub Actions.
 
 ## Frameworks utilisés
 
