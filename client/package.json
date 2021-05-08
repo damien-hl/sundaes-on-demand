@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@testing-library/dom": "^7.30.4",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "bootstrap": "^5.0.0",
+    "@testing-library/user-event": "^13.1.8",
+    "bootstrap": "^4.6.0",
     "eslint-plugin-jest-dom": "^3.8.1",
     "eslint-plugin-testing-library": "^4.2.0",
     "react": "^17.0.2",
