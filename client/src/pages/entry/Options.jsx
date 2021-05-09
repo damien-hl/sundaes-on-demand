@@ -6,6 +6,7 @@ import ScoopOption from "./ScoopOption";
 import ToppingOption from "./ToppingOption";
 import { useOrderDetails } from "../../contexts/OrderDetails";
 import { pricePerItem } from "../../constants";
+import { formatCurrency } from "../../utilities";
 
 export default function Options({ optionType }) {
   const [items, setItems] = useState([]);
@@ -41,7 +42,7 @@ export default function Options({ optionType }) {
   return (
     <>
       <h2>{title}</h2>
-      <p>{pricePerItem[optionType]} each</p>
+      <p>{formatCurrency(pricePerItem[optionType])} each</p>
       <p>
         {title} total: {orderDetails.totals[optionType]}
       </p>
