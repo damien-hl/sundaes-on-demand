@@ -11,18 +11,28 @@ function OrderSummary({ setOrderPhase }) {
     </li>
   ));
 
-  const toppingArray = Array.from(orderDetails.toppings.entries());
-  const toppingList = toppingArray.map(([itemName]) => (
-    <li key={itemName}>{itemName}</li>
-  ));
+  const hasToppings = orderDetails.toppings.size > 0;
+  let toppingsDisplay = null;
+
+  if (hasToppings) {
+    const toppingArray = Array.from(orderDetails.toppings.entries());
+    const toppingList = toppingArray.map(([itemName]) => (
+      <li key={itemName}>{itemName}</li>
+    ));
+    toppingsDisplay = (
+      <>
+        <h2>Toppings: {orderDetails.totals.toppings}</h2>
+        <ul>{toppingList}</ul>
+      </>
+    );
+  }
 
   return (
     <div>
       <h1>Order Summary</h1>
       <h2>Scoops: {orderDetails.totals.scoops}</h2>
       <ul>{scoopList}</ul>
-      <h2>Toppings: {orderDetails.totals.toppings}</h2>
-      <ul>{toppingList}</ul>
+      {toppingsDisplay}
       <h2>Total {orderDetails.totals.grandTotal}</h2>
       <SummaryForm setOrderPhase={setOrderPhase} />
     </div>
