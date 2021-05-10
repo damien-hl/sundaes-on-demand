@@ -1,5 +1,5 @@
 # Sundaes On Demand
-> :ice_cream: Yummy!
+> Projet issu du cours [Testing React with Jest and Testing Library](https://www.udemy.com/course/react-testing-library/) par [Bonnie Schulkin](https://github.com/bonnie)
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
